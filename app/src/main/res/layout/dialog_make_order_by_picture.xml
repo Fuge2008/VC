@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="165dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_app_color"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_picture_choice"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:text="    纸质用车申请以图片形式转达，VV为您提供更简便的下单功能"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#cccccc"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/cancleBtn"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:textColor="@color/app_color"
+                android:text="手动新增"
+                />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="0.02"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+
+                />
+
+            <Button
+                android:id="@+id/sureBtn"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/app_color"
+                android:text="立即体验"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#cccccc"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

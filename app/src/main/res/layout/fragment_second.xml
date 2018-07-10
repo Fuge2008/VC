@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saas.saasuser.fragment.SecondFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5"
+            android:scaleType="fitXY"
+            />
+    </FrameLayout>
+    <include layout="@layout/view_head_title_head"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:text="优化管理   智慧出行" />
+            <TextView
+                android:id="@+id/tv_content_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="13sp"
+                android:text="因人而行 因行而租 行租结行" />
+     </LinearLayout>
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_rent_apply"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_button"
+                android:text="租行申请" />
+            <Button
+                android:id="@+id/btn_order_complete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_button"
+                android:text="订单完善" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+

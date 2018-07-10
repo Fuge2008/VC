@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head_title_head_news"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/turnplate_bg_left"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="租行中心"
+                android:textColor="#005BAC"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="周到的租行服务，带给您更安全便捷的出行体验。"
+                android:textAlignment="textStart"
+                android:textColor="#005BAC"
+                android:textSize="13.5dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.saas.saasuser.view.CircleMenuLayout
+                android:id="@+id/id_menulayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/turnplate_bg_right">
+
+                <RelativeLayout
+                    android:id="@id/id_circle_menu_item_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/turnplate_center_unlogin" />
+
+                    <ImageView
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/turnplate_mask_unlogin_normal" />
+                </RelativeLayout>
+            </com.saas.saasuser.view.CircleMenuLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

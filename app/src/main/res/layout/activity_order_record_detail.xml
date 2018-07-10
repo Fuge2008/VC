@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_background"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/view_head_title_right_togglebutton"></include>
+
+    <com.amap.api.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_user_info"
+        android:layout_marginTop="45dp"></com.amap.api.maps.MapView>
+
+    <RadioGroup
+        android:id="@+id/rg_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_user_info"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mapView"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_record_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="原始轨迹" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="#0000FF"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_record_rectify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轨迹纠偏" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grasp_flag"
+                android:paddingLeft="15dp"></View>
+        </LinearLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/edge_shadow_bg"
+        android:orientation="horizontal">
+
+
+        <com.saas.saasuser.view.CircleImageView
+            android:id="@+id/iv_other_head"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/icon_head_image" />
+
+        <LinearLayout
+            android:id="@+id/ll_text_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="14dp"
+                android:text="耗时：  1小时23分"
+                android:textColor="#757575"
+                android:textSize="18sp" />
+
+            <View style="@style/route_detail_divider" />
+
+            <TextView
+                android:id="@+id/tv_total_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="14dp"
+                android:text="里程：  58.9km"
+                android:textColor="#757575"
+                android:textSize="18sp" />
+
+            <View style="@style/route_detail_divider" />
+
+            <TextView
+                android:id="@+id/tv_total_pricce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="14dp"
+                android:text="费用：  87.6元"
+                android:textColor="#757575"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

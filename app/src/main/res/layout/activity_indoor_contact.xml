@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saas.saasuser.activity.IndoorContactActivity">
+  <include layout="@layout/view_head_title_page"></include>
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="公告"
+        />
+    <TextView
+        android:id="@+id/tv_text_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="公司各部门：
+    春节将至，公司预祝全体员工新春愉快，万事如意!现将2017年春节公司放假安排通知如下：
+    一、放假时间
+    2017年1月21日(农历腊月二十一)至2017年2月6日(农历正月初七)，共十七天，2017年2月7日(农历正月初八下午2点)正式报到上班。
+    二、注意事项
+    1、放假前各部门、每位员工必须完成应完成的各项工作任务。
+    2、各部门自行安排好卫生清洁，确保门窗、水和电关闭完好。
+    3、放假期间不得将公司配发笔记本电脑带走，各部门经理负责封存本部门笔记本电脑，各部门经理负责各部门人员和财产安全。
+    3、清理各自在公司的欠款。
+    4、1月20日下午2点在XXXX办公室开会后放假。
+    5、放假、上班途中及放假期间请大家一定要注意人身安全，确保安全、按时返回。
+    6、放假期间，大家外出游玩时，请注意安全!
+    公司提前祝大家：
+    新春愉快，阖家欢乐，万事如意
+
+
+                                                              人事行政部
+                                                              2017年12月1日" />
+
+
+
+</LinearLayout>

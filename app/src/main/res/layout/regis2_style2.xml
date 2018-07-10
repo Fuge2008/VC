@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="22dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/tv_identifyingcode"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="验证码"
+                android:drawablePadding="10dp"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edittext_phoneCode_person"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:hint="请输入右侧验证码"
+                android:textColorHint="#CCCCCC"
+                android:maxLength="4"
+                android:paddingLeft="25dp"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginRight="24dp"
+                android:id="@+id/iv_code"
+                android:layout_width="84dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:background="#EDF7FF"/>
+            <TextView
+                android:layout_marginRight="24dp"
+                android:textSize="10sp"
+                android:text="       看不清,换一张"
+                android:layout_below="@id/iv_code"
+                android:layout_width="84dp"
+                android:layout_height="14dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/linear"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp"
+        android:background="#D8D8D8"/>
+</RelativeLayout>

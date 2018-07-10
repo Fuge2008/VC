@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 动态汽车-->
+    <declare-styleable name="CarAnim">
+        <attr name="imageSrc" format="reference" />
+        <attr name="direction" />
+        <attr name="duration" format="integer" />
+        <attr name="scaleType" />
+    </declare-styleable>
+
+
+    <attr name="direction">
+        <enum name="up" value="0" />
+        <enum name="right" value="1" />
+        <enum name="down" value="2" />
+        <enum name="left" value="3" />
+    </attr>
+
+    <attr name="scaleType">
+        <enum name="matrix" value="0" />
+        <enum name="fitXy" value="1" />
+        <enum name="fitStart" value="2" />
+        <enum name="fitCenter" value="3" />
+        <enum name="fitEnd" value="4" />
+        <enum name="center" value="5" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="7" />
+    </attr>
+    <!-- 折叠订单-->
+    <declare-styleable name="FoldingCell">
+        <attr name="backSideColor" format="color" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="additionalFlipsCount" format="integer" />
+        <attr name="cameraHeight" format="integer" />
+    </declare-styleable>
+
+    <!-- ViewPagerIndicator-->
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="itemSize" format="dimension" />
+        <attr name="delimiterSize" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- CardStackLayout-->
+    <declare-styleable name="CardStackLayout">
+        <attr name="parallax_enabled" format="boolean" />
+        <attr name="parallax_scale" format="integer" />
+        <attr name="card_gap" format="dimension" />
+        <attr name="card_gap_bottom" format="dimension" />
+        <attr name="showInitAnimation" format="boolean" />
+    </declare-styleable>
+
+    <!-- ExpandIconView-->
+    <declare-styleable name="ExpandIconView">
+        <attr name="eiv_roundedCorners" format="boolean" />
+        <attr name="eiv_switchColor" format="boolean" />
+        <attr name="eiv_color" format="color" />
+        <attr name="eiv_colorMore" format="color" />
+        <attr name="eiv_colorLess" format="color" />
+        <attr name="eiv_colorIntermediate" format="color" />
+        <attr name="eiv_animationDuration" format="integer" />
+        <attr name="eiv_padding" format="dimension" />
+    </declare-styleable>
+
+    <!-- ExpandableLayout-->
+    <declare-styleable name="ExpandableLayout">
+        <attr name="parentLayout" format="integer" />
+        <attr name="childLayout" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="day">
+        <attr name="state_current" format="boolean" />
+    </declare-styleable>
+
+    <attr name="calendarViewStyle" format="reference" />
+
+    <!--slidecode-->
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension" />
+        <attr name="captchaHeight" format="dimension" />
+        <attr name="matchDeviation" format="dimension" />
+    </declare-styleable>
+
+    <!-- =================================二维码样式================================= -->
+    <declare-styleable name="QRCodeView">
+        <!-- 扫描框距离toolbar底部的距离，默认值为90dp -->
+        <attr name="qrcv_topOffset" format="dimension|reference" />
+        <!-- 扫描框边角线的宽度，默认值为3dp -->
+        <attr name="qrcv_cornerSize" format="dimension|reference" />
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr name="qrcv_cornerLength" format="dimension|reference" />
+        <!-- 扫描框边角线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_cornerColor" format="color|reference" />
+        <!-- 扫描框的宽度，默认值为200dp -->
+        <attr name="qrcv_rectWidth" format="dimension|reference" />
+        <!-- 条码扫样式描框的高度，默认值为140dp -->
+        <attr name="qrcv_barcodeRectHeight" format="dimension|reference" />
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#33FFFFFF -->
+        <attr name="qrcv_maskColor" format="color|reference" />
+        <!-- 扫描线的宽度，默认值为1dp -->
+        <attr name="qrcv_scanLineSize" format="dimension|reference" />
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_scanLineColor" format="color|reference" />
+        <!-- 扫描线距离上下或者左右边框的间距，默认值为0dp -->
+        <attr name="qrcv_scanLineMargin" format="dimension|reference" />
+        <!-- 是否显示默认的图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultScanLineDrawable" format="boolean" />
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr name="qrcv_customScanLineDrawable" format="reference" />
+        <!-- 扫描边框的宽度，默认值为1dp -->
+        <attr name="qrcv_borderSize" format="dimension|reference" />
+        <!-- 扫描边框的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_borderColor" format="color|reference" />
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为1000 -->
+        <attr name="qrcv_animTime" format="integer" />
+        <!-- 扫描框是否垂直居中，该属性为true时会忽略qrcv_topOffset属性，默认值为false -->
+        <attr name="qrcv_isCenterVertical" format="boolean" />
+        <!-- Toolbar的高度，当有设置qrcv_isCenterVertical属性时，通过该属性来修正有Toolbar时导致扫描框垂直居中的偏差，默认值为0dp -->
+        <attr name="qrcv_toolbarHeight" format="dimension|reference" />
+        <!-- 是否是扫条形码，默认值为false -->
+        <attr name="qrcv_isBarcode" format="boolean" />
+        <!-- 扫描二维码时的提示文案，默认值为null -->
+        <attr name="qrcv_qrCodeTipText" format="string|reference" />
+        <!-- 扫描条码时的提示文案，默认值为null -->
+        <attr name="qrcv_barCodeTipText" format="string|reference" />
+        <!-- 提示文案字体大小，默认值为14sp -->
+        <attr name="qrcv_tipTextSize" format="dimension|reference" />
+        <!-- 提示文案颜色，默认值为@android:color/white -->
+        <attr name="qrcv_tipTextColor" format="color|reference" />
+        <!-- 提示文案是否在扫描框的底部，默认值为false -->
+        <attr name="qrcv_isTipTextBelowRect" format="boolean" />
+        <!-- 提示文案与扫描框之间的间距，默认值为20dp -->
+        <attr name="qrcv_tipTextMargin" format="dimension|reference" />
+        <!-- 是否把提示文案作为单行显示，默认值为false -->
+        <attr name="qrcv_isShowTipTextAsSingleLine" format="boolean" />
+        <!-- 是否显示提示文案的背景，默认值为false -->
+        <attr name="qrcv_isShowTipBackground" format="boolean" />
+        <!-- 提示文案的背景色，默认值为#22000000 -->
+        <attr name="qrcv_tipBackgroundColor" format="color|reference" />
+        <!-- 扫描线是否来回移动，默认值为true -->
+        <attr name="qrcv_isScanLineReverse" format="boolean" />
+        <!-- 是否显示默认的网格图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultGridScanLineDrawable" format="boolean" />
+        <!-- 扫描线的网格图片资源，默认值为null -->
+        <attr name="qrcv_customGridScanLineDrawable" format="reference" />
+        <!-- 是否只识别扫描框区域的二维码，默认值为false -->
+        <attr name="qrcv_isOnlyDecodeScanBoxArea" format="boolean" />
+    </declare-styleable>
+    <!-- =================================ScratchCard================================= -->
+    <declare-styleable name="ScratchCard">
+        <attr name="card_color" format="color" />
+        <attr name="circle_radius" format="integer" />
+        <attr name="card_gaps" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RingStatisticsView">
+        <attr name="rsv_RingWidth" format="reference|dimension"/>
+        <attr name="rsv_CenterText" format="reference|string"/>
+        <attr name="rsv_CenterNumber" format="reference|string"/>
+        <attr name="rsv_CenterTextColor" format="reference|color"/>
+        <attr name="rsv_CenterNumberColor" format="reference|color"/>
+        <attr name="rsv_CenterTextSize" format="reference|dimension"/>
+        <attr name="rsv_CenterNumberSize" format="reference|dimension"/>
+        <attr name="rsv_PercentTextSize" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SnowfallView">
+        <attr name="snowflakesNum" format="integer" />
+        <attr name="snowflakeImage" format="reference" />
+        <attr name="snowflakeAlphaMin" format="integer" />
+        <attr name="snowflakeAlphaMax" format="integer" />
+        <attr name="snowflakeAngleMax" format="integer" />
+        <attr name="snowflakeSizeMin" format="dimension" />
+        <attr name="snowflakeSizeMax" format="dimension" />
+        <attr name="snowflakeSpeedMin" format="integer" />
+        <attr name="snowflakeSpeedMax" format="integer" />
+        <attr name="snowflakesFadingEnabled" format="boolean" />
+        <attr name="snowflakesAlreadyFalling" format="boolean" />
+    </declare-styleable>
+
+</resources>

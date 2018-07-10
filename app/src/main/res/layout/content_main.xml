@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_time_select">
+    <LinearLayout
+        android:id="@+id/ll_alarmtime"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_starttime"
+            android:layout_gravity="left|center"
+            android:src="@drawable/ic_date_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_starttime"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_endtime"
+            android:layout_gravity="left|center"
+            android:src="@drawable/ic_date_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_endtime"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_underline"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/ll_alarmtime"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+    <RelativeLayout
+        android:id="@+id/rl_alarm_remark"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/view_underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range"
+            android:layout_alignParentLeft="true"
+            ></ImageView>
+        <TextView
+            android:id="@+id/txt_remark_info"
+            android:layout_toRightOf="@+id/img_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/listview_alarm"-->
+        <!--android:layout_below="@+id/rl_alarm_remark"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</ListView>-->
+</RelativeLayout>

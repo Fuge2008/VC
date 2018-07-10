@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sssss"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+         <ImageView
+             android:layout_width="50dp"
+             android:src="@mipmap/personok"
+             android:id="@+id/iv_content"
+             android:layout_gravity="center"
+             android:layout_height="50dp"/>
+
+         <TextView
+             android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_per_apply_content"
+            android:padding="20dp"
+            android:text="您的申请已通过****\n审核通过，可登录平台进行相关操作"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

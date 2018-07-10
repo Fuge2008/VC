@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sssss"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+         <ImageView
+             android:layout_width="50dp"
+             android:src="@mipmap/exclamatorymark"
+             android:id="@+id/iv_content"
+             android:layout_gravity="center"
+             android:layout_height="50dp"/>
+
+         <TextView
+             android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_en_exists_content"
+            android:padding="8dp"
+            android:text="     您注册的手机号已注册***企业，无法继\n续注册，如需帮助，请联系平台客服人员"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

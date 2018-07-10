@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 租行中心 -->
+    <string-array name="rent_enter_title">
+
+        <item>车辆交接</item>
+        <item>个人设置</item>
+        <item>更多功能</item>
+        <item>企业发票</item>
+        <item>企业名片</item>
+        <item>VV新闻</item>
+        <item>新增订单</item>
+        <item>VV动态</item>
+    </string-array>
+    <string-array name="rent_enter_content">
+        <item>车辆交接服务，带给您更安全便捷的全方位体验1</item>
+        <item>个人设置服务，带给您更安全便捷的全方位体验2</item>
+        <item>更多功能服务，带给您更安全便捷的全方位体验3</item>
+        <item>企业发票服务，带给您更安全便捷的全方位体验4</item>
+        <item>企业名片服务，带给您更安全便捷的全方位体验5</item>
+        <item>新闻服务，带给您更安全便捷的全方位体验6</item>
+        <item>新增订单服务，带给您更安全便捷的全方位体验7</item>
+        <item>VV动态服务，带给您更安全便捷的全方位体验8</item>
+    </string-array>
+
+    <string-array name="hot_city">
+        <item>北京</item>
+        <item>成都</item>
+        <item>重庆</item>
+        <item>广州</item>
+        <item>杭州</item>
+        <item>南京</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>天津</item>
+        <item>武汉</item>
+        <item>西安</item>
+    </string-array>
+
+    <string-array name="tenantry">
+        <item>租行使用-所有企业</item>
+        <item>租行提供-汽车租赁公司 </item>
+        <item>租行协助-汽车产业相关</item>
+    </string-array>
+
+
+</resources>

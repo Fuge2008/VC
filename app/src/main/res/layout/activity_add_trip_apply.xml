@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.saas.saasuser.activity.AddTripApplyActivity">
+
+    <include layout="@layout/view_head_title_right_button4"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="申请必填项"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/cb_title_show_hind1"
+                    android:layout_width="18dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_expend_up"
+                    android:layout_marginRight="18dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e3e3e3"/>
+
+            <LinearLayout
+                android:id="@+id/ll_title_show_hind1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:id="@+id/ll_trip_modes"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="出行方式:"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_modes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="内部车"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_modes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/xiasanjiao"   />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="预计成本:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_calculate_cost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="必填项"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="元整" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="用车日期:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="2017-10-01"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_date"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_calender"  />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="用车星期:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/et_trip_week"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/down_arrow"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/ll_trip_go_reture"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="往      返:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_go_reture"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="单程往"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_go_reture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/xiasanjiao"  />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="上车地点:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_start_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="必填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_start_address"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_location" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/ll_trip_start_time"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="开始时间:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_start_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_start_time"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_time"  />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="行程终点:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_end_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="必填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_end_address"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_location" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="乘车人数:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_passagers_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="必填项"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="人" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="用途说明:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_purpose"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="必填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiasanjiao"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="更多信息"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/cb_title_show_hind2"
+                    android:layout_width="18dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_expend_up"
+                    android:layout_marginRight="18dp"
+                     />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e3e3e3"/>
+
+            <LinearLayout
+                android:id="@+id/ll_title_show_hind2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="下车地点:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_mid_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_mid_address"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_location"  />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:id="@+id/ll_trip_end_time"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="结束时间:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/et_trip_end_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_end_time"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_choice_time"  />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/ll_trip_car_grade"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="车辆等级:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_car_grade"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="经济车型"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_trip_car_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/xiasanjiao"  />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="是否留宿"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_passager_bestow"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="不留宿"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_trip_passager_bestow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/lagel_show_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="跨境使用:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_cross_border"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="不跨境"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_trip_cross_border"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/lagel_show_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="使用内部车:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_trip_inner_car"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="不使用"
+
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_trip_trip_inner_car"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/lagel_show_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="同  行  人："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_peer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiasanjiao"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="车辆要求："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_car_requst"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiasanjiao"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="司机要求:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_driver_requst"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiasanjiao"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="其他要求:"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_trip_other_requst"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="选填项"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiasanjiao"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#e3e3e3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

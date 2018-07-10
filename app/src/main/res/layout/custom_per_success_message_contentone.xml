@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sssss"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+         <ImageView
+             android:layout_width="50dp"
+             android:src="@mipmap/per_successed_message"
+             android:id="@+id/iv_content"
+             android:layout_gravity="center"
+             android:layout_height="50dp"/>
+
+         <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="您加入的申请已向企业提交，审批\n结果平台将以短信方式通知，请注意查收"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

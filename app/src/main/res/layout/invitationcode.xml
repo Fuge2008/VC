@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_input_code_en"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="请输入邀请码与对方企业建立关系"
+        android:textColorHint="#CCCCCC"
+        android:paddingLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/tv_input_code_en"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_input_code_en"
+        android:layout_alignLeft="@+id/et_input_code_en"
+        android:layout_alignTop="@+id/et_input_code_en"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="邀请码"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/en_invitationcode"
+        android:background="@mipmap/en_invitation_notificationmessage"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <View
+        android:layout_below="@id/tv_input_code_en"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="13dp"
+        android:background="#D8D8D8"/>
+
+</RelativeLayout>

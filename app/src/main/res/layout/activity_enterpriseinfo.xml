@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f2f2f4"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rel_height48"
+        android:background="#4E69F4">
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:id="@+id/iv_register_back2"
+            style="@style/action_back"/>
+        <TextView
+            style="@style/title_register"
+            android:text="企业注册"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_en"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <!-- <EditText
+             android:id="@+id/edit_en_shortname"
+             style="@style/et_tabedit"
+             android:hint="设置企业简称"
+             android:maxLength="11"/>-->
+
+        <include layout="@layout/en_shortname"/>
+
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属行业:"/>
+
+            <Spinner
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/industry"
+                android:layout_width="260dp"
+                android:layout_height="40dp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#8a929b"
+            android:layout_marginLeft="20dp"
+            android:layout_height="1dp"/>-->
+
+        <include layout="@layout/belongtoindustries"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp"
+            android:background="#D8D8D8"/>
+
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp">
+
+              <TextView
+                  android:layout_centerVertical="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="行业细分:"/>
+
+              <Spinner
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/industrycategory"
+                  android:layout_width="260dp"
+                  android:layout_height="40dp"/>
+
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:background="#8a929b"
+              android:layout_marginLeft="20dp"
+              android:layout_height="1dp"/>-->
+
+        <include layout="@layout/industrysegmentation"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp"
+            android:background="#D8D8D8"/>
+
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="所属地区:"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>-->
+
+        <include layout="@layout/areabelong"/>
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="企业租行类别"/>
+
+            <Spinner
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tenantrycategory"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>-->
+
+        <include layout="@layout/businessleasingcategory"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp"
+            android:background="#D8D8D8"/>
+
+        <TextView
+            android:id="@+id/enterpriseinfo_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="租行类别说明"
+            android:textColor="#4E69F4"/>
+
+        <Button
+            android:id="@+id/enter_info_register"
+            style="@style/button_next"
+            android:layout_marginTop="20dp"
+            android:text="注册"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_enterprise_vv"
+            style="@style/text_vv"/>
+
+        <TextView
+            android:layout_toRightOf="@id/tv_enterprise_vv"
+            style="@style/text_vv_service"/>
+
+        <!--<CheckBox
+            android:layout_toLeftOf="@id/tv_enterprise_vv"
+            android:layout_alignBaseline="@id/tv_enterprise_vv"
+            android:id="@+id/en_chk_selector"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f2f2f4"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rel_height48"
+        android:background="#4E69F4">
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:id="@+id/iv_register_back2"
+            style="@style/action_back"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_register"
+            android:text="企业注册"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:id="@+id/ll_en"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<EditText
+            android:id="@+id/edit_admin_name"
+            style="@style/et_tabedit"
+            android:drawablePadding="15dp"
+            android:hint="输入管理员名称"
+            android:maxLength="11"/>-->
+
+       <!-- <EditText
+            android:id="@+id/et_setpwd_en"
+            style="@style/et_tabedit"
+            android:drawablePadding="15dp"
+            android:hint="设置登录密码"
+            android:inputType="textPassword"/>-->
+
+        <!-- <EditText
+           android:id="@+id/et_input_pwd"
+           style="@style/et_tabedit"
+           android:drawablePadding="15dp"
+           android:hint="再次输入密码"
+           android:inputType="textPassword"/>-->
+
+        <!--<EditText
+           android:id="@+id/et_input_code_en"
+           style="@style/et_tabedit"
+           android:gravity="center"
+           android:hint="请输入邀请码,与对方直接建立关系"
+           android:inputType="text"/>-->
+
+        <include layout="@layout/administrator"/>
+
+        <include layout="@layout/en_inputpassword"/>
+
+        <include layout="@layout/en_confirmpassword"/>
+
+        <include layout="@layout/edit_enter"/>
+
+        <include layout="@layout/invitationcode"/>
+
+        <Button
+            android:id="@+id/btn_en_fragment"
+            style="@style/button_next"
+            android:layout_marginTop="@dimen/margintop20"
+            android:text="下一步"/>
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/text_vv"/>
+
+        </RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>

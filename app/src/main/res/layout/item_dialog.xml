@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_item_text_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvItemDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:text="Title"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+    <ListView
+        android:id="@+id/lvItemDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#3000"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

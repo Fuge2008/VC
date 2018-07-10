@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#4E69F4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:id="@+id/iv_back_forget"
+            style="@style/action_back"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/title_register"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/forget_password"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:id="@+id/ll_per"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+   <!-- <EditText
+        android:id="@+id/et_phone_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/login_phone_select"
+        android:drawablePadding="15dp"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingLeft="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000"/>-->
+        <include layout="@layout/forpasnum"/>
+
+   <!-- <EditText
+        android:id="@+id/et_setpwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/numerou"
+        android:drawablePadding="15dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000"/>-->
+
+        <include layout="@layout/forpasinputpassword"/>
+
+   <!-- <EditText
+        android:id="@+id/et_ok_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/numerou"
+        android:drawablePadding="15dp"
+        android:hint="请确认密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000"/>-->
+
+        <include layout="@layout/forpasconfirmpassword"/>
+
+    <!--<LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edittext_phoneCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/login_lock_select"
+                android:drawablePadding="15dp"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="18dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_send_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/et_code_input"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/send_tv_bg"
+                android:clickable="true"
+                android:text="发 送"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000"/>-->
+
+        <include layout="@layout/forpasidentifyingcode"/>
+
+    <Button
+        android:id="@+id/btn_modify"
+        style="@style/button_next"
+        android:layout_marginTop="20dp"
+        android:text="重置密码"/>
+
+    </LinearLayout>
+
+</LinearLayout>

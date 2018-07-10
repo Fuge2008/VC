@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_main_item"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e3e3e3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.saas.saasuser.view.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_order_passage" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="： 小李"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <com.saas.saasuser.view.CircleImageView
+
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_order_time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="： 小李"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <com.saas.saasuser.view.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+
+            android:src="@drawable/icon_start_location" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="： 小李"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <com.saas.saasuser.view.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_end_location" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="： 小李"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

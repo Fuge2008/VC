@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saas.saasuser.fragment.ThridFragment">
+    <include layout="@layout/view_head_title_page_search"></include>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:layoutAnimation="@anim/layout_list_anim"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#f0f0f0"
+        android:layout_marginTop="45dp"
+        android:smoothScrollbar="true" />
+    <ImageView
+        android:id="@+id/iv_error_show"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/error"/>
+
+        <TextView
+            android:id="@+id/tv_empty_show"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:text="当前暂无通知"
+            android:layout_below="@+id/iv_error_show"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

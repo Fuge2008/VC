@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layoutDirection="ltr"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_my_head"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_head_image" />
+
+        <ImageView
+            android:id="@+id/iv_chinese_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+           android:layout_toRightOf="@+id/iv_my_head"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/saas_logo" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/iv_my_head"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业名称"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="中仁车汇科技有限公司"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_my_head"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业电话"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_my_head"
+                    android:layout_marginLeft="15dp"
+                    android:text="0755-88804112"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_my_head"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业邮箱"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_my_head"
+                    android:layout_marginLeft="15dp"
+                    android:text="zhongrenchehui@vv-che.com"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_my_head"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VV企业码"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="SF5D528452DRF5222DS"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_my_head"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在行业"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="汽车租赁行业"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_my_head"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业网站"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_company_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_my_head"
+                    android:layout_marginLeft="15dp"
+                    android:text="http://vv-che.com"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="企业简介:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_company_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_des"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:text="   车队信息化管理方案开发、咨询，车队管理软件的开发与销售，车队管理硬件的技术开发、维护、销售与租赁（不含限制项目）；车辆远程信息处理系统、智能车辆管理信息处理系统的研发；互联网数字技术开发；信息系统集成、信息化解决方案开发；信息安全技术研发；数据分析与数据服务、电子支付平台的研发；计算机领域、计算机技术咨询服务，网络科技、网络技术、通讯工程、网络工程、电子计算机与电子技术信息、计算机软硬件开发及销售，车联网信息系统集成；电子产品、通讯设备、车载电脑、车联网终端产品、汽车电子产品、电脑周边产品、汽车零部件的技术开发、维护、销售与租赁（不含限制项目）；经营进出口业务（以上法律、行政法规、国务院决定禁止的项目除外，限制的项目须取得许可后方可经营）。"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

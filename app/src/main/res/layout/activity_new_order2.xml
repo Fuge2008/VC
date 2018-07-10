@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/expand_img3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingTop="9dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:textColor="#59a5f1"
+                    android:text="订单信息"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                       android:id="@+id/iviv_1"
+
+
+                    android:src="@drawable/xiasanjiao"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#e3e3e3"/>
+
+            <com.saas.saasuser.view.ExpandLayout
+                android:layout_width="match_parent"
+                android:id="@+id/expandLayout3"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/danweijiancheng"
+                        android:paddingTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="单位简称:"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvdanweijiancheng"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:id="@+id/danweijiancheng"
+                            android:src="@drawable/xiasanjiao"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/chengcheyonghu"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="乘车用户:"/>
+
+                        <TextView
+                            android:id="@+id/tvchengcheyonghu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/yongcheriqi"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="用车日期:"/>
+
+                        <TextView
+                            android:id="@+id/tvyongcheriqi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项"/>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/icon_choice_calender"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/kaishishijian"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="开始时间:"/>
+
+                        <TextView
+                            android:id="@+id/tvkaishishijian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项"/>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+
+                            android:src="@drawable/icon_choice_time"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:id="@+id/tv_shangchedidian"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="上车地点:"/>
+
+                        <EditText
+                            android:id="@+id/shangchedidian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="必填项"
+                            android:textSize="14sp"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/ll1"
+                            android:src="@drawable/icon_choice_location"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+
+                            android:drawablePadding="20dp"
+                            android:text="行程终点:"/>
+
+                        <EditText
+                            android:id="@+id/xingchengmudidi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+
+                            android:hint="必填项"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/ll2"
+                            android:src="@drawable/icon_choice_location"
+
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/wangfanliusu"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="往返留宿:" />
+
+                        <TextView
+                            android:id="@+id/tvwangfanliusu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao" />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="乘车人数:"/>
+
+                        <EditText
+                            android:id="@+id/chengcherenshu"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+
+                            android:background="@android:color/transparent"
+                            android:hint="必填项"
+
+                            android:inputType="number"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:visibility="invisible"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/lianxidianhua"
+
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="联系电话:"/>
+
+                        <TextView
+                            android:id="@+id/tvlianxidianhua"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+
+                            android:hint="必填项"/>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/yewuleibie"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="业务类别:"/>
+
+                        <TextView
+                            android:id="@+id/tvyewuleibie"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+
+                            android:background="@android:color/transparent"
+                            android:hint="必填项"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/jiesuanfangshi"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="结算方式:"/>
+
+                        <TextView
+                            android:id="@+id/tvjiesuanfangshi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+
+                            android:background="@android:color/transparent"
+                            android:hint="必填项"/>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:id="@+id/textViewss"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="用途说明:"/>
+
+                        <EditText
+                            android:id="@+id/yongtushuoming"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+
+                            android:background="@android:color/transparent"
+                            android:hint="必填项"
+
+                            android:maxLength="200"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.saas.saasuser.view.ExpandLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#e3e3e3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#e3e3e3"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:id="@+id/expand_img"
+                android:paddingTop="9dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:textColor="#59a5f1"
+                    android:text="更多信息"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/iviv_2"
+                    android:src="@drawable/xiasanjiao"/>
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#e3e3e3"/>
+
+
+
+
+
+
+            <com.saas.saasuser.view.ExpandLayout
+                android:id="@+id/expandLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/yidiliusu"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="异地留宿:"/>
+
+                        <TextView
+                            android:id="@+id/tvyidiliusu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:id="@+id/kuanjincheliang"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="跨境车辆:"/>
+
+                        <TextView
+                            android:id="@+id/tvkuanjincheliang"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/zhiziqiandan"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="纸质签单"/>
+
+                        <TextView
+                            android:id="@+id/tvzhiziqiandan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="20dp"
+                            android:text="下车地点:"/>
+
+                        <EditText
+                            android:id="@+id/xiachedidian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:id="@+id/jieshushijian"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="结束时间:"/>
+
+                        <TextView
+                            android:id="@+id/tvjieshushijian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/suoxuchexing"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="所需车型:"/>
+
+                        <TextView
+                            android:id="@+id/tvsuoxuchexing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:paddingRight="20dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:id="@+id/zhidingcheliangdengji"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="指定车辆等级:"/>
+
+                        <TextView
+                            android:id="@+id/tvzhidingcheliangdengji"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="预订人电话:"/>
+
+                        <EditText
+                            android:id="@+id/dianhua"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="phone"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="预订人姓名:"/>
+
+                        <EditText
+                            android:id="@+id/xingming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="同行人:"/>
+
+                        <EditText
+                            android:id="@+id/tongxingren"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="司机要求:"/>
+
+                        <EditText
+                            android:id="@+id/sijiyaoqiu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="车辆要求:"/>
+
+                        <EditText
+                            android:id="@+id/cheliangyaoqiu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="其他要求:"/>
+
+                        <EditText
+                            android:id="@+id/qitayaoqiu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:visibility="invisible"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="订单提示:"/>
+
+                        <EditText
+                            android:id="@+id/dingdantishi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+
+                        android:layout_marginLeft="20dp"
+                        android:gravity="top"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="接机牌内容:"/>
+
+                        <EditText
+                            android:id="@+id/jiejipaineirong"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.saas.saasuser.view.ExpandLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#e3e3e3"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/expand_img1"
+                android:paddingBottom="9dp"
+                android:paddingTop="9dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#3d96ef"
+
+                    android:text="结算信息"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iviv_3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+
+                    android:src="@drawable/xiasanjiao"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#e3e3e3"/>
+            <com.saas.saasuser.view.ExpandLayout
+                android:id="@+id/expandLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="订单报价:"/>
+
+                        <EditText
+                            android:id="@+id/dingdanbaojia"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:visibility="invisible"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="司机代收:"/>
+
+                        <EditText
+                            android:id="@+id/sijidaishou"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:text="代收说明:"/>
+
+                        <EditText
+                            android:id="@+id/daishoushuoming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:visibility="invisible"
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:id="@+id/jijiaguize"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+
+                            android:drawablePadding="20dp"
+                            android:text="计价规则:"/>
+
+                        <TextView
+                            android:id="@+id/tvjijiaguize"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:id="@+id/baobibizhong"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+
+                            android:drawablePadding="20dp"
+                            android:text="报币币种:"/>
+
+                        <TextView
+                            android:id="@+id/tvbaobibizhong"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#e3e3e3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:id="@+id/daishoubizhong"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="20dp"
+                            android:text="代收币种:"/>
+
+                        <TextView
+                            android:id="@+id/tvdaishoubizhong"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:hint="选填项"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+
+
+                            android:src="@drawable/xiasanjiao"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#e3e3e3"/>
+                </LinearLayout>
+
+            </com.saas.saasuser.view.ExpandLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

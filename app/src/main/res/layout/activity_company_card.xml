@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_head_title_page_share"></include>
+
+    <RelativeLayout
+        android:id="@+id/en_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_company_background"
+            android:src="@drawable/encard_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+      <!--  <ImageView
+            android:id="@+id/iv_company_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/saas_logo"
+            android:layout_width="70dp"
+            android:layout_height="66dp"/>-->
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:textColor="#FFFFFF"
+            android:text="中仁车汇科技发展（深圳）有限公司"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_company_code"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_company_code_name"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="VV企业码:"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_company_code"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_company_code_name"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:text="B0755W245981"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_company_type"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_company_type_name"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="所在行业:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_company_type_name"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:text="租赁和商务服务-租赁"
+            android:id="@+id/tv_company_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_company_webpage"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_company_webpage_name"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="企业网站:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_company_webpage_name"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:text="http://vv-che.com"
+            android:id="@+id/tv_company_webpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_company_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_company_telephone_name"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="企业电话:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_company_telephone_name"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:text="0755-88804112"
+            android:id="@+id/tv_company_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_company_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_company_email_name"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="企业邮箱:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_company_email_name"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:text="zhongrenchehui@vv-che.com"
+            android:id="@+id/tv_company_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_company_describe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_company_describe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="企业简介:"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_company_describe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_company_describe_name"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:text="11555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555"/>
+        <!--   <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_more"
+            />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

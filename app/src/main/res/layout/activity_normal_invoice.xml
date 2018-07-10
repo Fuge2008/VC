@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context="com.saas.saasuser.activity.AddTripApplyActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="公司名称(发票抬头)"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/name_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="中仁车汇科技发展(深圳)有限公司"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="企业税号(纳税识别号)"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/enterprise_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="9144030MA5DHPD1XG"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bank0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="开户银行(企业对公开户)"
+                android:textSize="16sp"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="中国工商银行"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/bank_account0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="银行账号(不限类型)"
+                android:textSize="16sp"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="3332 1234 5678 99"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/contact_phone_number0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="联系电话(注册登记电话)"
+
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/contact_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="0755-88824112"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adress0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="地址(工商注册地址)"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="广东省深圳市南山区软件产业基地"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

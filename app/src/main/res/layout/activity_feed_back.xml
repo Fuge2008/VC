@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_feed_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cdcdcd"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/view_head_title_right_button4"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="180dp"
+            android:text="100"
+            android:textColor="#999999"
+            android:textSize="12.0sp" />
+
+
+        <EditText
+            android:id="@+id/et_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_et"
+            android:hint="请输入你的宝贵意见（300字以内）"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

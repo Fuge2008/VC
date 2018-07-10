@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.recker.flybanner.FlyBanner
+        android:id="@+id/banner_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/user_login" />
+
+                <com.saas.saasuser.view.ClearEditText
+                    android:id="@+id/ce_input_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@id/ce_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/psw_login" />
+
+                <com.saas.saasuser.view.ClearEditText
+                    android:id="@+id/ce_input_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:visibility="invisible"
+                    android:id="@+id/cb_hide_password"
+                    android:layout_width="25dp"
+                    android:layout_height="12dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/password_show_selector"
+                    android:button="@null"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@id/ce_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:background="#CCCCCC"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/forget_pwd"
+                android:textColor="#666666"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:text="忘记密码？"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/enroll_vv"
+                android:textColor="#666666"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:text="立即注册？"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/button_next"
+            android:layout_marginTop="16dp"
+            android:text="登      录"/>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_login"
+                style="@style/text_vv_login"/>
+
+            <TextView
+                android:layout_toRightOf="@id/tv_login"
+                style="@style/text_vv_service"/>
+
+
+           <!-- <CheckBox
+                android:layout_toLeftOf="@id/tv_person_vv"
+                android:layout_alignBaseline="@id/tv_person_vv"
+                android:id="@+id/per_chk_selector"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"/>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

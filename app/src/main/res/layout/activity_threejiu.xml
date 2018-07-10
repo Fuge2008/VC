@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#4E69F4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:id="@+id/iv_back_threejiu"
+            style="@style/action_back"/>
+
+        <TextView
+            android:id="@+id/tv_threejiu"
+            style="@style/title_register"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="仁车会三“就”"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="一就=迁就"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="\t\t\t但凡涉及多方交互的场景，必然会存在一个或多个以上的用户习惯。一般的应用都会以自身开发需求为主导，而忽略了用户习惯，所谓的用户体验也仅仅是建立在现有的开发思维上。VV在开发上尽全力迁就用户，以用户的现有操作为基础，加入互联网智能因素，为用户量身定制相关功能。"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="二就=将就"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="\t\t\t用与好用，能用与适用。虽然只有一字之差，但是在功能实现时却困难重重。大多数应用在开发时，往往受已制定方案的影响，导致开发初期基础不便修改而放弃了原有的极致追求。VV在开发过程中也同样面对过类似的问题，但是团队坚决不将就，宁可推倒重来也不会让用户体验一个有缺陷的产品。VV团队历时20多个月的艰辛付出，目前已建设好极其灵活的底层架构，在现有的各功能版块上也可以做到无限扩展，随着用户的反馈与我们的自我检讨，我们将逐步为用户提供更好用、更适用的应用功能。"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="三就=成就"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="\t\t\t某知名投资人所述：“需要靠金钱培养用户习惯的都是伪共享”。团队怀着改变行业痛点、出行现状的初心建立“VV租行”综合管理平台，先从用户当下需求入手，解决经营管理痛点，优化模式使用户在多方面更具竞争力。再借助互联网的强大推广作用，将用户闲置的、可利用的资源分享给有需求的人，成就真共享、大智慧！"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

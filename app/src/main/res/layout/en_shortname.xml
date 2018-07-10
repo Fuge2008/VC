@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_en_shortname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="请设置企业简称"
+        android:textColorHint="#CCCCCC"
+        android:paddingLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/tv_en_shortname"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_en_shortname"
+        android:layout_alignLeft="@+id/edit_en_shortname"
+        android:layout_alignTop="@+id/edit_en_shortname"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="企业简称"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"/>
+
+
+    <View
+        android:layout_below="@id/tv_en_shortname"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="13dp"
+        android:background="#D8D8D8"/>
+
+</RelativeLayout>

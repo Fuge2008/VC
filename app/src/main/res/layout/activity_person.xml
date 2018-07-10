@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f2f2f4"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/relativeLayout">
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:id="@+id/iv_person_back"
+            style="@style/action_back"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/title_register"
+            android:text="@string/person_register"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_per"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <!--<EditText
+            android:id="@+id/et_person_phones"
+            style="@style/et_tabedit"
+            android:drawableLeft="@mipmap/login_person_select"
+            android:maxLength="11"
+            android:drawablePadding="15dp"
+            android:hint="个人名称"/>-->
+
+        <!-- <EditText
+           android:id="@+id/edit_loginpwd_person"
+           style="@style/et_tabedit"
+           android:hint="登录密码"
+           android:drawablePadding="15dp"
+           android:drawableLeft="@mipmap/login_lock_select"
+           android:inputType="textPassword"/>-->
+
+        <!--<EditText
+          android:id="@+id/edit_ok_pwd_person"
+          style="@style/et_tabedit"
+          android:hint="确认密码"
+          android:drawablePadding="15dp"
+          android:drawableLeft="@mipmap/login_lock_select"
+          android:inputType="textPassword"/>-->
+
+        <!-- <EditText
+           android:drawableLeft="@mipmap/numerou"
+           android:id="@+id/et_person_code"
+           android:drawablePadding="20dp"
+           style="@style/et_tabedit"
+           android:hint="请输入邀请码"
+           android:inputType="text"/>-->
+
+        <include layout="@layout/personalregister"/>
+
+        <include layout="@layout/inputpassword"/>
+
+        <include layout="@layout/confirmpassword"/>
+
+        <include layout="@layout/edit_enter"/>
+
+        <include layout="@layout/corporatecode"/>
+
+
+        <Button
+            android:id="@+id/btnnext_person_register"
+            style="@style/button_next"
+            android:layout_marginTop="@dimen/margintop20"
+            android:text="立即注册"/>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_person_vv"
+                style="@style/text_vv"/>
+
+            <TextView
+                android:layout_toRightOf="@id/tv_person_vv"
+                style="@style/text_vv_service"/>
+
+            <!--<CheckBox
+                android:layout_toLeftOf="@id/tv_person_vv"
+                android:layout_alignBaseline="@id/tv_person_vv"
+                android:id="@+id/per_chk_selector"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"/>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

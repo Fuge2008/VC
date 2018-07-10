@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+           android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:text="提示"/>
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="   一旦开始行程，就不能取消，会产生额外费用，确认开启行程？"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#666666"
+
+            />
+        <Button
+            android:id="@+id/cancleBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:background="@null"
+            android:textColor="@color/app_color"
+            android:text="取  消"
+            />
+
+        <Button
+            android:id="@+id/sureBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textColor="@color/app_color"
+            android:text="确  定"
+            />
+    </RelativeLayout>
+</RelativeLayout>

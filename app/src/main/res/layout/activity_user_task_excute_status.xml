@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_task_excute_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.saas.saasuser.activity.DriverTaskExcuteStatusActivity">
+    <include layout="@layout/view_head_title_page"></include>
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps.MapView>
+    <TextView
+        android:id="@+id/show_all_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总距离："
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/btn_submit"
+        android:layout_alignParentStart="true">
+
+        <CheckBox
+            android:id="@+id/cb_my_location"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/map_small_route_selector"
+            android:visibility="gone"
+            android:button="@null"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/cb_return_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/icon_return_menu"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb_navigation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/map_bnav"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb_detail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/icon_order_detail"
+            android:button="@null" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_contral_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_compelete_task"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:visibility="gone"
+           android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:text="完善任务"
+            android:background="@drawable/selector_button"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:text="以后再说"
+            android:background="@drawable/selector_button"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="开始"
+        />
+
+</RelativeLayout>

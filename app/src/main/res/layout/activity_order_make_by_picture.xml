@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context="com.saas.saasuser.activity.OrderMakeByPictureActivity">
+  <include layout="@layout/view_head_title_camera"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/ll_add_driver"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="司机资源:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_add_driver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="王司机"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/xiasanjiao"   />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#e3e3e3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/ll_add_car"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="车辆资源:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_add_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="粤BNB588"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/xiasanjiao"   />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e3e3e3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/ll_add_date"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="用车日期:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_trip_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="2017-10-01"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_date"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_choice_calender"  />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#e3e3e3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/ll_add_passenger"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="用车人:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_add_passenger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="王老衲"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/xiasanjiao"   />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e3e3e3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ll_trip_start_time"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="开始时间:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_trip_start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_trip_start_time"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_choice_time"  />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#e3e3e3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/ll_car_modes"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="所需车型:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_car_modes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="7座商务车"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_car_modes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/xiasanjiao"   />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e3e3e3"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <ImageView
+        android:id="@+id/iv_car_image"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_add_picture"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_contral_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_compelete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg"
+            android:text="手动完善"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg"
+            android:text="提交订单"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

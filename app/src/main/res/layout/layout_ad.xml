@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:src="@drawable/mh"
+        android:scaleType="fitXY" />
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="跳过\n3"
+        android:id="@+id/ui_button"
+        android:textSize="16sp"
+        android:textColor="#f7964f"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/textbackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="17dp"/>
+    <com.saas.saasuser.view.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAlphaMin="150"
+        app:snowflakeAngleMax="10"
+        app:snowflakeImage="@drawable/snowflake"
+        app:snowflakeSizeMax="26dp"
+        app:snowflakeSizeMin="4dp"
+        app:snowflakeSpeedMax="12"
+        app:snowflakeSpeedMin="4"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesNum="450" />
+
+</RelativeLayout>

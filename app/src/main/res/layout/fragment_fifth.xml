@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saas.saasuser.fragment.FifthFragment">
+<include layout="@layout/view_head_title_page_search"></include>
+
+    <ScrollView
+        android:id="@+id/sv_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <com.recker.flybanner.FlyBanner
+                android:id="@+id/fb_banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+            <com.saas.saasuser.view.addViews.widget.LineGridView
+                android:id="@+id/gv_lanuch_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:listSelector="#f1f1f1"
+                android:numColumns="4"
+                android:padding="0dp" />
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tbtv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="7dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textColor="@color/app_color"-->
+                    <!--android:text="VV新闻" />-->
+                <!--<com.saas.saasuser.view.UPMarqueeView-->
+                    <!--android:id="@+id/upview1"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_toRightOf="@+id/tbtv"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_height="match_parent"></com.saas.saasuser.view.UPMarqueeView>-->
+            <!--</RelativeLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#cdcdcd"
+                android:layout_height="5dp" />
+            <LinearLayout
+            android:layout_width="match_parent"
+             android:orientation="vertical"
+            android:layout_height="1510dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20sp"
+                        android:text="热点新闻"
+                        android:textColor="@color/app_color"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#cdcdcd"
+                    android:layout_height="0.5dp" />
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/pull_refresh_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#f0f0f0"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
